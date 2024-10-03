@@ -1,0 +1,27 @@
+.nav__list{
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+.nav__link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #726e8d;
+    transition: var(--main-trs);
+}
+@media(any-hover: hover){
+    .nav__link:hover{
+        color: var(--dark-primary);
+    }
+}
+.nav__link:active{
+    color: var(--dark-primary);
+}
+.nav__link:focus{
+    outline: none;
+}
+.nav__link:focus-visible{
+    outline: var(--outline);
+    outline-offset: var(--outline-offset);
+}

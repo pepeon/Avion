@@ -14,3 +14,6 @@
     background: rgba(249, 249, 249, 0.15);
     color: var(--white)
 }
+.btn--theme-light{
+    background: var(--light-grey);
+}

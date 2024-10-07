@@ -1,0 +1,26 @@
+.newsletter{
+    background: var(--light-grey);
+    padding-top: 50px;
+    padding-bottom: 60px;
+    
+}
+.newsletter__content{
+   display: flex;
+   padding-top: 68px;
+   padding-left: 351px;
+   padding-right: 351px;
+   padding-bottom: 54px;
+   align-items: center;
+   flex-direction: column;
+}
+.newsletter__desc{
+    max-width: 470px;
+    padding-top: 16px;
+    text-align: center;
+}
+.newsletter__form{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 60px;
+    padding-bottom: 54px;
+}

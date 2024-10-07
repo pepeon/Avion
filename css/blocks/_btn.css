@@ -8,7 +8,9 @@
     padding: 16px 32px;
     width: 170px;
     height: 56px;
-    color: var(--white)
+    color: var(--white);
+    border: none;
+    cursor: pointer;
 }
 .btn--theme-dark{
     background: rgba(249, 249, 249, 0.15);
@@ -16,4 +18,8 @@
 }
 .btn--theme-light{
     background: var(--light-grey);
+}
+.btn--theme-darker{
+    background: var(--dark-primary);
+    color: var(--white)
 }

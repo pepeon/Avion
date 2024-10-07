@@ -2,6 +2,10 @@
     padding-top: 80px;
     padding-bottom: 56px;
 }
+.products--pop{
+    padding-top: 64px;
+    padding-bottom: 48px;
+}
 .products_title{
     font-family: var(--second-family);
     font-weight: 400;
@@ -9,11 +13,20 @@
     color: var(--dark-primary);
 }
 .product__item{
+    position: relative;
     grid-column: 3 span;
+}
+.product__item--big{
+    grid-column: 6 span;
 }
 .product__link{
     text-decoration: none;
     color: inherit;
+}
+.product__link::after{
+    content: "";
+    position: absolute;
+    inset: 0;
 }
 .product__top{
     position: relative;
@@ -62,7 +75,6 @@
 }
 .centered{
     margin-top: 30px;
-    margin-bottom: 56px;
     text-align: center;
 }
 

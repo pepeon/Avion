@@ -5,6 +5,7 @@
     
 }
 .newsletter__content{
+    background: white;
    display: flex;
    padding-top: 68px;
    padding-left: 351px;

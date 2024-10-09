@@ -1,0 +1,24 @@
+.notice{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
+    background: var(--dark-primary);
+    height: 41px;
+}
+.notice__text{
+    font-weight: 400;
+font-size: 14px;
+color: var(--white);
+font-family: var(--font-family);
+}
+.notice__close{
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.notice--hidden{
+    display: none;
+}

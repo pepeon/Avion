@@ -40,3 +40,9 @@
 .benefits__item--packaging{
     background-image: url(../img/Sprout.svg);
 }
+.benefits--about .benefits__item{
+    padding: 48px;
+    padding-top: 84px;
+    background-color: var(--light-grey);
+    background-position: 48px 48px;
+}

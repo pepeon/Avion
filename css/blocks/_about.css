@@ -39,3 +39,15 @@
 .about__desc:not(:last-of-type){
     padding-bottom: 25px;
 }
+.about-reverse{
+    background: var(--light-grey);
+    flex-direction: row-reverse;
+}
+.about__btn-white{
+    background-color: white;
+    
+}
+.about-reverse .about__info{
+    padding-right: max(15px, calc((100% - var(--container-width)) / 2));
+    padding-left: 84px;
+}

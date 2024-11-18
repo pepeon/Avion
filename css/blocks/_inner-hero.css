@@ -1,0 +1,36 @@
+.inner-hero {
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.inner-hero__content {
+    display: flex;
+    align-items: flex-end;
+    min-height: 209px;
+    padding-bottom: 36px;
+    
+}
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+        clip: rect(0 0 0 0);
+}
+.inner-hero__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 140%;
+    color: var(--white);
+    font-family: var(--second-family);
+}
+
+.inner-hero--all {
+    background-image: url("../../img/all-bg.jpg");
+}px

@@ -1,0 +1,40 @@
+.stepper {
+    display: flex;
+    background: var(--white);
+    width: 122px;
+}
+
+.stepper__btn {
+    flex-grow: 0;
+    padding: 12px 16px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--border-grey);
+    font-family: var(--font-family);
+    color: var(--dark-primary);
+}
+
+.stepper__input {
+    width: calc(100% - 84px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    border: none;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark-primary);
+    font-family: var(--font-family);
+    text-align: center;
+    
+
+}
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

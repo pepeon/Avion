@@ -18,6 +18,7 @@
 }
 .btn--theme-light{
     background: var(--light-grey);
+    color: var(--dark-primary)
 }
 .btn--theme-darker{
     background: var(--dark-primary);

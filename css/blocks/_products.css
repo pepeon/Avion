@@ -20,6 +20,7 @@
     grid-column: 6 span;
 }
 .product__link{
+    
     text-decoration: none;
     color: inherit;
 }
@@ -37,6 +38,7 @@
     object-fit: cover;
 }
 .product{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

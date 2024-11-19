@@ -28,3 +28,6 @@
     background-color: transparent;
     cursor:  pointer;
 }
+.stop-scroll {
+    overflow: hidden;
+}

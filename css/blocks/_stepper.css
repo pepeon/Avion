@@ -28,6 +28,7 @@
     color: var(--dark-primary);
     font-family: var(--font-family);
     text-align: center;
+    background-color: inherit;
     
 
 }
@@ -37,4 +38,30 @@ input[type='number'] {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+}
+
+.stepper_.stepper__btn:focus-visible {
+    outline: none;
+}
+
+@media (any-hover: hover) {
+    .stepper__btn:hover {
+        
+    }
+}
+
+
+
+.stepper__btn:focus-visible {
+    outline: 2px dashed var(--dark-primary);
+    outline-offset: var(--outline-offset);
+}
+
+.stepper__input:focus {
+    outline: none;
+}
+
+.stepper__input:focus-visible {
+    outline: 2px dashed var(--dark-primary);
+    outline-offset: var(--outline-offset);
 }

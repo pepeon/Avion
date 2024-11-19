@@ -3,15 +3,20 @@
     padding-bottom: 80px;
 }
 
-.benefits__list{
-
-}
 .benefits__item{
     background-position: left top;
     background-size: 24px 24px;
     background-repeat: no-repeat;
-    padding-top: 40px;
+    padding-top: 25px;
     grid-column: 3 span;
+    
+}
+.benefits .subtitle {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--dark-primary);
 }
 .benefits__subtitle{
     margin-bottom: 8px;
@@ -22,11 +27,14 @@
     line-height: 140%;
     color: var(--dark-primary);
 }
-.benefits_description{
-    /* font-weight: 400; */
+.benefits__description{
+    color: var(--dark-primary);
+    font-family: var(--font-family);
+    font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     color: var(--dark-primary);
+
 }
 .benefits__item--next{
     background-image: url(../img/Delivery.svg);

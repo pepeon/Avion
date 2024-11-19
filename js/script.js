@@ -1,6 +1,32 @@
 const notice = document.querySelector('.notice')
-const stepperEl = document.querySelector('.stepper')
+const stepperEls = document.querySelectorAll('.stepper')
+const burgerEl = document.querySelector('.burger')
+const headerListEl = document.querySelector('.header__list')
 
+if (headerListEl) {
+    new TransferElements(
+        {
+          sourceElement: headerListEl,
+          breakpoints: {
+            767.98: {
+              targetElement: document.querySelector('.header__bottom'),
+              targetPosition: 1
+            }
+          }
+        }
+      );
+}
+
+if (burgerEl) {
+    const menu = document.querySelector('.header__bottom'),
+          body = document.body;
+
+    burgerEl.addEventListener('click', () => {
+        burgerEl.classList.toggle('burger--active')
+        menu.classList.toggle('header__bottom--active')
+        body.classList.toggle('stop-scroll')
+    })
+}
 if (notice){
     const noticeCloseEl = document.querySelector('.notice__close')
     noticeCloseEl.addEventListener('click', ()=>{
@@ -9,8 +35,10 @@ if (notice){
     })
 }
 
-if (stepperEl) {
-    const stepperInputEl = stepperEl.querySelector('.stepper__input'),
+if (stepperEls.length != 0) {
+
+    stepperEls.forEach(stepperEl => {
+        const stepperInputEl = stepperEl.querySelector('.stepper__input'),
           stepperBtnMinusEl = stepperEl.querySelector('.stepper__btn--minus'),
           stepperBtnPlusEl = stepperEl.querySelector('.stepper__btn--plus');
         
@@ -21,6 +49,8 @@ if (stepperEl) {
     let count = Number(stepperInputEl.value);
 
     stepperInputEl.addEventListener('input', () => {
+
+        
         if (stepperInputEl.value <= +stepperMin) {
             stepperInputEl.value = stepperMin
             count = stepperMin
@@ -62,4 +92,6 @@ if (stepperEl) {
         }
    
     })
+    });
+    
 }

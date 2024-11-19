@@ -5,14 +5,14 @@
     
 }
 .newsletter__content{
-    background: white;
+   background: white;
    display: flex;
-   padding-top: 68px;
-   padding-left: 351px;
-   padding-right: 351px;
-   padding-bottom: 54px;
+   max-width: 1273px;
+   justify-content: center;
+
    align-items: center;
    flex-direction: column;
+   
 }
 .newsletter__desc{
     max-width: 470px;

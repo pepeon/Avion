@@ -108,6 +108,10 @@
     color: var(--dark-primary);
 }
 
+.cart__mobile-header {
+    display: none;    
+}
+
 .cart__total {
     padding-top: 12px;
 }

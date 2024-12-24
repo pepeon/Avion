@@ -3,9 +3,18 @@ const stepperEls = document.querySelectorAll('.stepper')
 const burgerEl = document.querySelector('.burger')
 const headerListEl = document.querySelector('.header__list')
 const filtersBtnEl = document.querySelector('.catalog__mobile-btn')
+const cartBtn = document.querySelectorAll('.header__button')
 
+if (cartBtn) {
+    cartBtn.forEach(element => {
+        if (element.getAttribute('aria-label') === 'Cart')
+            element.addEventListener('click', () => {
+                window.location.href = 'cart.html'
+            })
+    });
+}
 
-if(filtersBtnEl) {
+if (filtersBtnEl) {
     const filters = document.querySelector('.filters')
     filtersBtnEl.addEventListener('click', () => {
         filters.classList.toggle('filters--active')

@@ -1,3 +1,6 @@
+import "../css/main.css"
+import "../cart.html"
+
 const notice = document.querySelector('.notice')
 const stepperEls = document.querySelectorAll('.stepper')
 const burgerEl = document.querySelector('.burger')
